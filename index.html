@@ -10,46 +10,45 @@
       font-family: 'Inter', sans-serif;
       background-color: #000;
       color: #fff;
-      text-align: center;
       margin: 0;
       padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      flex-direction: column;
+      text-align: center;
+      overflow: hidden; /* Disable scrolling */
     }
 
     .container {
-      background-color: #111;
+      background-color: #000;
+      padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-      padding: 40px;
-      max-width: 700px;
+      max-width: 600px;
       width: 100%;
+      box-sizing: border-box;
     }
 
     h1 {
-      font-size: 3.5rem;
+      font-size: 2.5rem;
       color: #fff;
       text-transform: uppercase;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       letter-spacing: 2px;
-      animation: float 5s ease-in-out infinite;
     }
 
     h2 {
-      font-size: 1.5rem;
-      color: #ccc;
-      margin-bottom: 30px;
+      font-size: 1.2rem;
+      color: #fff;
+      margin-bottom: 20px;
       letter-spacing: 1px;
     }
 
     p {
-      font-size: 1.2rem;
-      color: #ddd;
-      margin: 10px 0;
-      line-height: 1.6;
+      font-size: 1rem;
+      color: #fff;
+      margin: 8px 0;
+      line-height: 1.5;
     }
 
     .highlight {
@@ -63,38 +62,29 @@
     }
 
     .grinding-quote {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       color: #f39c12;
       font-weight: 500;
-      margin-top: 30px;
+      margin-top: 20px;
     }
 
     .balloons {
       background: url('https://www.transparenttextures.com/patterns/balloons.png');
       background-size: 250px;
-      padding: 20px;
+      padding: 10px;
       border-radius: 10px;
-      margin-top: 40px;
+      margin-top: 30px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    }
-
-    @keyframes float {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-20px);
-      }
     }
 
     a {
       text-decoration: none;
       color: #f39c12;
       font-weight: 500;
-      margin-top: 40px;
+      margin-top: 30px;
       display: inline-block;
-      padding: 12px 30px;
-      border-radius: 30px;
+      padding: 10px 25px;
+      border-radius: 25px;
       border: 2px solid #f39c12;
       transition: all 0.3s ease;
     }
