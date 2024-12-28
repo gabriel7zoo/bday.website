@@ -15,10 +15,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            overflow: hidden; /* Prevent scrolling until typing finishes */
             flex-direction: column;
             text-align: center;
+            height: 100vh;
+            overflow: hidden; /* Prevent scrolling until typing finishes */
         }
 
         #mainDiv {
@@ -43,6 +43,7 @@
             font-size: 18px;
             line-height: 1.6;
             animation: fadeIn 2s ease-out;
+            margin: 10px 0;
         }
 
         /* Animations */
@@ -251,6 +252,7 @@
             } else {
                 // Allow scrolling after typing is complete
                 document.body.style.overflow = 'auto';
+                window.scrollTo(0, document.body.scrollHeight); // Auto scroll to bottom
             }
         }
 
