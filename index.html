@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday, Itachi</title>
-    <!-- Link to your external CSS file (make sure the path is correct) -->
-    <link href="css/your-style.css" type="text/css" rel="stylesheet">
+    <title>Happy Birthday, Itachi!</title>
+    <link href="css/default.css" type="text/css" rel="stylesheet">
     <script src="js/jquery.js"></script>
     <script src="js/garden_dev.js"></script>
     <script src="js/functions_dev.js"></script>
@@ -14,13 +13,16 @@
 <body>
     <div id="mainDiv">
         <div id="content">
-            <h1>Happy Birthday, Itachi!</h1>
+            <!-- Informal, Gen Z-style greeting -->
+            <h1>Yo, Itachi! Happy Birthday, My Dude!</h1>
             <p>
-                Today marks the special day of December 28, 2007, when you graced this world with your presence. Itachi, you have grown with grace, strength, and beauty—just like a rare jewel that brightens the world around it. On your birthday, I celebrate not just the passage of time but the incredible person you have become.
+                Ayy, it’s your day, December 28th, 2007—your b-day is officially legendary. Let’s be real, you’ve been flexing on us for years now, growing stronger, cooler, and just all-around *lit* like the next-gen icon you are. I’m out here wishing you not just another year of life, but a whole year of straight-up success, happiness, and whatever else you’re vibing with.
             </p>
             <p>
-                I created this page to honor you, to express my deepest wishes for happiness, strength, and all the amazing things you deserve. As you journey through life, may your path always be lit with love, laughter, and joy. ❤️
+                So, I made this page to flex and show love to you, the one who’s been out here making us proud. As you get older, you just keep leveling up, and I’m here for it. Hope this year’s the best one yet—just keep doing you, ‘cause that’s what makes you the GOAT. 💪
             </p>
+
+            <!-- Love Heart Animation and Time Elapsed -->
             <div id="loveHeart">
                 <canvas id="garden"></canvas>
                 <div id="messages">
@@ -28,18 +30,52 @@
                         <!-- Placeholder for live clock or time elapsed feature -->
                     </div>
                 </div>
+
+                <!-- Fun, brotherly romantic quote -->
                 <div id="loveu">
                     <p>
                         "What's in a name? That which we call a rose, <br>
                         By any other name would smell as sweet." <br><br>
-                        <div class="signature">- William Shakespeare</div>
+                        <div class="signature">- William Shakespeare (but, like, in 2024)</div>
                     </p>
                 </div>
             </div>
+
+            <!-- Code Block Section -->
+            <div id="code">
+                <span class="comments">/**</span><br />
+                <span class="space"/><span class="comments">* Yo, Itachi, your day’s here—December 28th!</span><br />
+                <span class="space"/><span class="comments">* This script is for the bro who’s been killin’ it.</span><br />
+                <span class="space"/><span class="comments">* Let’s just hit "run" and watch you level up!</span><br />
+                <span class="space"/><span class="comments">*/</span><br />
+                birthday@Itachi ~ $ >> <span class="keyword">cd love && sh </span> will.sh(<span class="string">"Itachi"</span>);<br />
+                <span class="comments">// Midnight hits, your age +1, but your swag +100</span><br />
+                Date currentTime = <span class="keyword">new</span> Date(); <br />
+                SimpleDateFormat formatter = <span class="keyword">new</span> SimpleDateFormat(<span class="string">"yyyy-MM-dd HH:mm:ss"</span>);<br />
+                String dateString = formatter.format(currentTime);<br />
+                if( dateString.equals(<span class="string">"2007-12-28 00:00:00"</span>) ){</br>
+                    u.age ++;</br>
+                    u.swag += 100;</br>
+                }</br>
+                <span class="comments">// Let’s keep this going...</span><br />
+                <span class="keyword">new</span> Thread (){<br />
+                @Override </br>
+                <span class="comments">// Wishing you the most epic things...</span><br />
+                while(true){</br>
+                <span class="comments">// Good vibes,</span><br />
+                u.happiness ++;</br>
+                <span class="comments">// Strength to outdo everyone,</span><br />
+                u.strength ++;</br>
+                <span class="comments">// More clout, more swag.</span><br />
+                }.start()</br>
+                <span class="comments">// Final thing to say... That’s it—</span><br />
+                System.out.println(<span class="string">"Yo, Happy Birthday, Itachi!!!"</span>);
+            </div>
         </div>
 
+        <!-- Updated Copyright Information -->
         <div id="copyright">
-            2024 &copy; <a href="https://kruk.co">kruk.co</a>
+            2024 &copy; <a href="https://extrinsicmusicgroup.com">extrinsicmusicgroup.com</a>
         </div>
     </div>
 
@@ -56,7 +92,7 @@
         if (!document.createElement('canvas').getContext) {
             var msg = document.createElement("div");
             msg.id = "errorMsg";
-            msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend using Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+            msg.innerHTML = "Yo, your browser’s kinda outdated. Upgrade to a newer one!";
             document.body.appendChild(msg);
             $("#content").css("display", "none");
             $("#copyright").css("position", "absolute").css("bottom", "10px");
@@ -76,4 +112,4 @@
         }
     </script>
 </body>
-</html>
+                </html>
