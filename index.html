@@ -30,20 +30,23 @@
             flex-direction: column;
             position: relative;
             overflow: hidden;
+            padding: 10px;
+            box-sizing: border-box;
         }
 
-        /* Content Styles */
+        /* Title and Text Styling */
         h1 {
-            font-size: 36px;
+            font-size: 4vw;
             margin-bottom: 20px;
             animation: fadeIn 2s ease-out;
         }
 
         p {
-            font-size: 18px;
+            font-size: 4vw;
             line-height: 1.6;
             animation: fadeIn 2s ease-out;
             margin: 10px 0;
+            max-width: 80%;
         }
 
         /* Animations */
@@ -59,8 +62,10 @@
         /* Love Heart Section */
         #loveHeart {
             position: relative;
-            width: 300px;
-            height: 300px;
+            width: 80vw;
+            height: 80vw;
+            max-width: 300px;
+            max-height: 300px;
             margin: 20px auto;
         }
 
@@ -85,19 +90,19 @@
 
         /* Message Section */
         #messages {
-            font-size: 18px;
+            font-size: 5vw;
             margin-top: 20px;
             animation: fadeIn 2s ease-out;
         }
 
         #elapseClock {
-            font-size: 22px;
+            font-size: 6vw;
             margin-top: 10px;
             font-family: 'Courier New', monospace;
         }
 
         #loveu {
-            font-size: 16px;
+            font-size: 4vw;
             margin-top: 50px;
             font-style: italic;
             animation: fadeIn 2s ease-out;
@@ -106,17 +111,18 @@
         /* Code Block Section */
         #code {
             background-color: #111;
-            padding: 20px;
-            width: 80%;
+            padding: 10px;
+            width: 90%;
             max-width: 500px;
             margin-top: 20px;
             font-family: 'Courier New', monospace;
-            font-size: 14px;
+            font-size: 4vw;
             text-align: left;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
             animation: slideUp 1s ease-out;
             white-space: pre-wrap;
             word-wrap: break-word;
+            margin-bottom: 20px;
         }
 
         @keyframes slideUp {
@@ -149,7 +155,7 @@
             bottom: 20px;
             text-align: center;
             color: #fff;
-            font-size: 14px;
+            font-size: 4vw;
         }
 
         #copyright a {
