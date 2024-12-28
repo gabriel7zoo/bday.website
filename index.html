@@ -3,54 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Birthday Itachi</title>
+  <title>Happy Birthday Itachi!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vercel:wght@400;500&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Vercel', sans-serif;
-      background-color: #000;
+      background-color: #111;
       color: #fff;
-      text-align: center;
       margin: 0;
       padding: 0;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .container {
+      background: linear-gradient(135deg, #222222, #333333);
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      padding: 30px;
+      max-width: 600px;
+      width: 100%;
     }
 
     h1 {
-      font-size: 3em;
-      margin-top: 20%;
-      color: white;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      font-size: 3.5rem;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
       animation: float 5s ease-in-out infinite;
     }
 
     h2 {
-      font-size: 1.5em;
-      color: #aaa;
-      margin: 10px 0;
+      font-size: 1.5rem;
+      color: #ddd;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
     }
 
     p {
-      font-size: 1.2em;
+      font-size: 1.1rem;
       color: #ccc;
-      margin: 10px 0;
+      line-height: 1.6;
+      margin: 15px 0;
     }
 
-    .balloons {
-      background-image: url('https://www.transparenttextures.com/patterns/balloons.png');
-      background-size: cover;
-      padding: 20px;
+    .highlight {
+      color: #f39c12;
+      font-weight: bold;
     }
 
     .sarcasm {
       color: #ff6347;
-      font-size: 1.3em;
       font-style: italic;
     }
 
     .grinding-quote {
-      margin-top: 50px;
-      font-size: 1.4em;
+      font-size: 1.3rem;
       color: #f39c12;
       font-weight: bold;
+      margin-top: 30px;
+      letter-spacing: 0.5px;
+    }
+
+    .balloons {
+      background: url('https://www.transparenttextures.com/patterns/balloons.png');
+      background-size: 250px;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     }
 
     @keyframes float {
@@ -58,22 +85,52 @@
         transform: translateY(0);
       }
       50% {
-        transform: translateY(-20px);
+        transform: translateY(-15px);
       }
     }
 
+    a {
+      text-decoration: none;
+      color: #f39c12;
+      font-weight: bold;
+    }
+
+    .button {
+      margin-top: 20px;
+      padding: 10px 30px;
+      background-color: #f39c12;
+      color: white;
+      border-radius: 25px;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #e67e22;
+    }
   </style>
 </head>
 <body>
-  <div class="balloons">
+  <div class="container">
     <h1>Happy 17th Birthday, Itachi!</h1>
-    <h2>Another year older, but who’s counting?</h2>
-    <p class="sarcasm">You're 17, but still the same brooding, mysterious genius who hides behind his pain... Well, that's *one* way to be legendary.</p>
-    <p>Through every battle, every loss, and every scar, you've become stronger. And not just in the physical sense... but in that *"I’ve seen some things"* kind of way. A true ninja's journey, huh?</p>
+    <h2>You're getting older, but no one expected you to *actually* age.</h2>
+    
+    <p>Another year, another year closer to becoming the absolute *legend* you were always meant to be. Honestly, even the most mysterious brooding ninjas need a day to just... chill and vibe.</p>
 
-    <p class="grinding-quote">"Life's not easy, but we grind through it... even when your whole clan is out to get you. You've got this." – Some guy who didn't understand how tough it really was.</p>
+    <p class="sarcasm">But hey, you're 17 now, Itachi. Who knew you'd make it this far without doing something that would completely break the internet? Well, I guess you still keep your secrets. Always.</p>
 
-    <p>Today, we celebrate you. A true hero, an enigmatic brother, and someone who somehow still manages to make us *feel* like we understand the pain… and occasionally the sarcasm.</p>
+    <p class="highlight">You’ve been grinding since day one, and no one can match your level of dedication. Even if it meant... *sacrificing* a few things along the way.</p>
+
+    <p class="grinding-quote">“It’s not just about being the strongest, it’s about surviving the grind. Even when the world’s stacked against you.” – Itachi Uchiha, probably.</p>
+
+    <div class="balloons">
+      <p>Today’s not just about surviving, though. Today’s about celebrating you. Your story. And yes, your iconic moments that make us laugh, cry, and question everything.</p>
+
+      <p>If anyone deserves to vibe today, it’s you, Itachi. You're a real one.</p>
+    </div>
+
+    <a href="#" class="button">Let’s Celebrate!</a>
   </div>
 </body>
 </html>
