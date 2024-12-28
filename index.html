@@ -16,7 +16,9 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            overflow: hidden; /* Prevent scrolling */
+            overflow: hidden; /* Prevent scrolling until typing finishes */
+            flex-direction: column;
+            text-align: center;
         }
 
         #mainDiv {
@@ -26,8 +28,8 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            text-align: center;
             position: relative;
+            overflow: hidden;
         }
 
         /* Content Styles */
@@ -112,6 +114,8 @@
             text-align: left;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
             animation: slideUp 1s ease-out;
+            white-space: pre-wrap;
+            word-wrap: break-word;
         }
 
         @keyframes slideUp {
@@ -232,6 +236,25 @@
             time++;
             document.getElementById('time').innerText = time;
         }, 1000);
+
+        // Typewriter effect for code block
+        let codeText = document.getElementById('code').innerHTML.split('<br />');
+        let index = 0;
+        let codeContainer = document.getElementById('code');
+        codeContainer.innerHTML = '';
+
+        function typeWriter() {
+            if (index < codeText.length) {
+                codeContainer.innerHTML += codeText[index] + '<br />';
+                index++;
+                setTimeout(typeWriter, 100); // Adjust the speed of typing
+            } else {
+                // Allow scrolling after typing is complete
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        typeWriter(); // Start the typing effect
     </script>
 </body>
             </html>
